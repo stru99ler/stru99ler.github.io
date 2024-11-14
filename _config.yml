@@ -1,28 +1,17 @@
-title: "test-blog-title"
-description: "test-blog-description"
-baseurl: ""  # 根目录
-url: "https://stru99ler.github.io"  # 替换为你的 GitHub Pages URL
+# 使用 minimal-mistakes 主题
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"  # 使用最新的版本替换 4.26.2
 
+# 添加插件
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-remote-theme  # 必须启用远程主题插件
+  - jekyll-include-cache
 
-remote_theme: "mmistakes/minimal-mistakes"  # 指定远程主题仓库
+# 其他必要的配置信息
+title: "Your Site Title"           # 网站标题
+description: "A brief description"  # 简短描述
+baseurl: ""                         # 如果托管在 GitHub Pages，通常为空
+url: "https://stru99ler.github.io"  # 网站 URL
 
-# 分页设置
-paginate: 5  # 每页显示的文章数量
-paginate_path: "/page:num/"
-
-# 作者信息
+# 主题的相关配置
 author:
-  name: "myname"
-  avatar: "/assets/images/avatar.png"  # 上传头像到 assets/images 目录，并指定路径
-  bio: "一句话介绍自己"
-
-# 社交链接（可选）
-# social:
-#   email: "you@example.com"
-#   github: yourusername
-#   twitter: yourhandle
+  name: "stru99ler"
+  email: "dong.dsy0@gmail.com"
