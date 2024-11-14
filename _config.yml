@@ -4,6 +4,8 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"  # 使用最新的版本替换
 # 添加插件
 plugins:
   - jekyll-include-cache
+  - jekyll-feed
+  
 
 # 其他必要的配置信息
 title: "Your Site Title"           # 网站标题
@@ -15,3 +17,13 @@ url: "https://stru99ler.github.io"  # 网站 URL
 author:
   name: "stru99ler"
   email: "dong.dsy0@gmail.com"
+
+paginate: 5                    # 每页显示的文章数量
+paginate_path: "/page:num/"    # 分页路径
+
+defaults:
+  - scope:
+      path: ""                 # 空路径表示所有页面
+      type: posts
+    values:
+      layout: single           # 文章页面布局
